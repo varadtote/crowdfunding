@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+:root {
+    /* Primary colors  */
+    --moderate-cyan: hsl(176, 50%, 47%);
+    --Dark-cyan: hsl(176, 72%, 28%);
+
+    /* Neutral Colors  */
+    --Black: hsl(0, 0%, 0%);
+    --Dark-gray: hsl(0, 0%, 48%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Commissioner", sans-serif;
+    color: var(--Dark-gray);
+}
+
+.App {
+    /* height: 200vh; */
+    width: 100vw;
+}
+
+/* ////////////////// Utility Classes  ////////////////////  */
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flexCol {
+    flex-direction: column;
+}
+
+.flexRow {
+    flex-direction: row;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.cyanText {
+    color: var(--moderate-cyan);
+}
+
+.blackText {
+    color: black;
+}
+
+.grayText {
+    color: var(--Dark-gray);
+}
+
+/* ////////////   Basic Components ///////////////////  */
+
+/* {     BUTTON       }    */
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.button {
+    background-color: hsl(176, 50%, 47%);
+    color: white;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    border-radius: 35px;
+}
+
+.button.gray {
+    background-color: var(--Black);
+}
+
+button:hover {
+    background-color: var(--Dark-cyan);
+}
+
+/* {   project card    } */
+
+.projectCardsGrid {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.projectCard {
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 100%;
+    height: max-content;
+}
+
+.cardTitleGrid {
+    justify-content: space-between;
+}
+
+.cardFooterGrid {
+    justify-content: space-between;
+}
+
+.cardText {
+    padding: 1rem;
+}
+
+.outofStock {
+    background: rgba(172, 168, 168, 0.5);
+}
+
+/* {     App Components      } */
+
+.applogo {
+    height: 80px;
+}
+
+/* ------------------------------------------- */
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.landingImage {
+    height: 60vh;
+    width: 100vw;
+}
+
+.landingImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container {
+    width: 60%;
+    background-color: antiquewhite;
+    padding-inline: 4rem;
+}
